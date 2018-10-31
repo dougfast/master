@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	  
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Doug Fast Web Design and Development</title>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Doug Fast Web Design</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	<div>
+	  	padding: 200px;
+		width: 100%;
+    </div>
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Portfolio Item Heading -->
+      <h1 class="my-4">Welcome.
+        <small>Are you ready for your website?</small>
+      </h1>
+
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <div class="col-md-8">
+          <img class="img-fluid" src="images/Fast-image-trace1.png" alt="Gears">
+        </div>
+
+        <div class="col-md-3">
+          <h3 class="my-3">Hello and welcome. I design and create websites for people and companies that want something unique, yet professional.</h3>
+		  </div>
+		  
+		<div class="col-md-12">
+          <h3 class="my-3">Services<small><br>As a web developer I use several common tools, shown below, to build your website.</small></h3>
+		  <ul>
+			<li><strong>HTML</strong> - The basic structure of the page. This is where your content will be.</li>
+			<li><strong>CSS</strong> - This is where we add the look and feel of your website with colors and fonts.</li>
+			<li><strong>Javascript</strong> - Action. We can make your site more interactive and interesting.</li>
+			  <li><strong>Adobe Illustrator and Photoshop</strong> - Whatever you imagine can be brought to life.</li>
+			  <li><strong>Flash/Adobe Animate</strong> - Making it move. Have ideas for animation? We can do that too.</li>
+			  <li><strong>Your ideas!</strong> Your website should be as unique as you are.</li>
+		  </ul>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+      <!-- Related Projects Row -->
+      <h3 class="my-4">Related Projects</h3>
+
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/Fast-Map.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/Dolphin-Blue.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/Couple before.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/Couple after.png" alt="">
+          </a>
+		</div>
+      </div>
+     </div>
+    <footer class="py-5 bg-dark">
+      <div class="container">
+          <div ng-app="myApp" ng-controller="myCtrl"> 
+			  <p class="m-0 text-center text-white"><strong>The time is: {{theTime}}</strong></p>
+		  </div>
+		  <script>
+			  var app = angular.module('myApp', []); app.controller('myCtrl', function($scope, $interval) { $scope.theTime = new Date().toLocaleTimeString(); $interval(function () {
+      	  $scope.theTime = new Date().toLocaleTimeString();
+  			}, 1000);});
+		  </script>
+		  <h6 class="m-0 text-center text-white">Last updated on  <!-- #BeginDate format:Am1 -->October 29, 2018<!-- #EndDate --></h6>
+		  <p class="m-0 text-center text-white">Copyright &copy; Doug Fast 2018</p>
+      </div>
+    </footer>
+  </body>
+</html>
